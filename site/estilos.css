@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Verdana', sans-serif; /* Fonte dos anos 2000 */
-    background-image: url('background.jpg'); /* Papel de parede de fundo */
+    background-image: url('./background.jpg'); /* Papel de parede de fundo */
     background-size: cover; /* Garante que o fundo cubra toda a tela */
     background-position: center; /* Centraliza o papel de parede */
     color: #333; /* Cor do texto */
