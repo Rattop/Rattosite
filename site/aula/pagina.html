@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://files.catbox.moe/vqwe9n.png">
+    <meta name="description" content="Um site simples, apenas para mostrar meu progresso!">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Rattop, Rattotráfico, Jogos, História antiga, Roller Coaster Tycoon">
+    <meta property="og:title" content="Site do Ratto">
+    <meta property="og:description" content="Site ainda em produção">
+    <meta property="og:url" content="https://ratto.neocities.org/Coisas%20da%20Aula/">
+    <meta property="og:image" content="https://files.catbox.moe/vqwe9n.png">
+    <title>Cronograma das Aulas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main class="white-box">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../blog/pagina.html">Blog</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="#">Acadêmico</a></li>
+                <li><a href="programming.html">Testes</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Cronograma das Aulas 2024.2</h1>
+            <h2>Ainda em Desenvolvimento</h2>
+        </header>
+        <section>
+            <p>Olá! Não sei como você veio parar aqui, mas espero que ou eu tenha enviado o link e você não esteja cheretando meu site O.o</p>
+        </section>
+        <div class="calendar">
+            <h3>Calendário</h3>
+            <div class="carousel">
+                <button class="prev" onclick="prevMonth()">&#10094;</button>
+                <div class="months">
+                    <!-- Calendários Dinâmicos Serão Inseridos Aqui -->
+                </div>
+                <button class="next" onclick="nextMonth()">&#10095;</button>
+            </div>
+            <!-- Código de Cores -->
+            <div class="color-code">
+                <h4>Código de Cores</h4>
+                <div class="color-item"><span class="color-sample" style="background-color: #ff9999;"></span> Importante</div>
+                <div class="color-item"><span class="color-sample" style="background-color: #99ff99;"></span> Presença</div>
+                <div class="color-item"><span class="color-sample" style="background-color: #9999ff;"></span> Falta</div>
+            </div>
+            <!-- Modal para escolher cor e adicionar notas -->
+            <div id="color-note-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h3>Configurar Dia</h3>
+                    <div class="color-options">
+                        <button onclick="setColor('#ff9999')">Importante</button>
+                        <button onclick="setColor('#99ff99')">Presença</button>
+                        <button onclick="setColor('#9999ff')">Falta</button>
+                    </div>
+                    <textarea id="note-text" placeholder="Adicione uma nota..."></textarea>
+                    <button onclick="saveNote()">Salvar Nota</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Este site foi criado com o <a href="http://neocities.org">Neocities</a>.</p>
+            <img src="/neocities.png" alt="Neocities">
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
