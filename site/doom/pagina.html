@@ -11,8 +11,9 @@
     <meta property="og:url" content="https://ratto.neocities.org/doom.html">
     <meta property="og:image" content="https://files.catbox.moe/vqwe9n.png">
     <title>Doom no DOS</title>
+    <link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css">
+    <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
     <link rel="stylesheet" href="./estilos.css">
-    <script src="https://cdn.jsdelivr.net/npm/js-dos@latest"></script>
 </head>
 
 <body>
@@ -28,16 +29,14 @@
         </nav>
 
         <h1>Doom no DOS</h1>
-        <div id="dos-container"></div>
+        <div id="dos"></div>
     </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            DOS.init({
-                container: '#dos-container',
-                game: 'https://ia903409.us.archive.org/29/items/doom_dos/doom.zip',
-                // Outras configurações podem ser ajustadas aqui
-                // Por exemplo, você pode adicionar configurações específicas do jogo aqui
+            Dos(document.getElementById("dos"), {
+                url: "https://files.catbox.moe/wdn4y9.jsdos", // Link para o pacote js-dos do Doom
+                // Adicione opções adicionais se necessário
             });
         });
     </script>
