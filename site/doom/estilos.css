@@ -75,9 +75,8 @@ p {
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 0; /* Remove padding padrão da lista */
-    text-align: left;
+    list-style: none; /* Remove estilo padrão da lista */
+    padding-left: 0;
     margin: 20px 0; /* Adiciona margem para separar a lista do texto */
 }
 
@@ -109,7 +108,23 @@ button.large-button:hover {
     background-color: #004d99; /* Cor do botão ao passar o mouse */
 }
 
+/* Estilo específico para o quadro DOS */
+#dos {
+    width: 800px; /* Ajuste conforme necessário */
+    height: 600px; /* Ajuste conforme necessário */
+    border: 2px solid #333; /* Borda similar à da white-box */
+    background-color: #000; /* Fundo preto para o console DOS */
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+}
+
+/* Ajusta o tamanho do quadro do DOS em dispositivos menores */
 @media (max-width: 768px) {
+    #dos {
+        width: 100%; /* Ajusta a largura para se adaptar à tela menor */
+        height: 400px; /* Ajusta a altura para uma melhor visualização em telas menores */
+    }
+
     .white-box {
         padding: 10px; /* Ajusta o padding para telas menores */
         width: 90%; /* Ajusta a largura da caixa */
@@ -135,19 +150,4 @@ button.large-button:hover {
         font-size: 1em; /* Reduz o tamanho da fonte do botão */
         padding: 12px 25px; /* Ajusta o padding do botão */
     }
-}
-/* Adicione isso ao seu arquivo estilos.css */
-
-#dos-container {
-    width: 800px; /* Ajuste conforme necessário */
-    height: 600px; /* Ajuste conforme necessário */
-    border: 2px solid #333; /* Borda similar à da white-box */
-    background-color: #000; /* Fundo preto para o console DOS */
-    margin: 20px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
-}
-
-h1 {
-    color: #333;
-    padding: 10px 0;
 }
