@@ -1,30 +1,44 @@
-<!doctype html>
- 2 <html lang="en-us">
- 3   <head>
- 4     <meta charset="utf-8">
- 5     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- 6     <title>DOOM</title>
- 7     <style type="text/css">
- 8       .dosbox-container { width: 320px; height: 200px; }
- 9       .dosbox-container > .dosbox-overlay { background: url(https://js-dos.com/cdn/DOOM.png); }
-10     </style>
-11   </head>
-12   <body>
-13     <div id="dosbox"></div>
-14     <br/>
-15     <button onclick="dosbox.requestFullScreen();">Make fullscreen</button>
-16     
-17     <script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>
-18     <script type="text/javascript">
-19       var dosbox = new Dosbox({
-20         id: "dosbox",
-21         onload: function (dosbox) {
-22           dosbox.run("upload/DOOM-@evilution.zip", "./doom");
-23         },
-24         onrun: function (dosbox, app) {
-25           console.log("App '" + app + "' is runned");
-26         }
-27       });
-28     </script>
-29   </body>
-30 </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://files.catbox.moe/vqwe9n.png">
+    <meta name="description" content="Doom no DOS">
+    <meta name="keywords" content="Doom, DOS, Jogos, Rattop">
+    <meta property="og:title" content="Doom no DOS">
+    <meta property="og:description" content="Jogue Doom no seu navegador com js-dos">
+    <meta property="og:url" content="https://ratto.neocities.org/doom.html">
+    <meta property="og:image" content="https://files.catbox.moe/vqwe9n.png">
+    <title>Doom no DOS</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-dos@latest"></script>
+</head>
+
+<body>
+    <div class="white-box">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../blog/pagina.html">Blog</a></li>
+                <li><a href="../reviews.html">Reviews</a></li>
+                <li><a href="../aula/pagina.html">Acadêmico</a></li>
+                <li><a href="../programming.html">Testes</a></li>
+            </ul>
+        </nav>
+
+        <h1>Doom no DOS</h1>
+        <div id="dos-container"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            DOS.init({
+                container: '#dos-container',
+                game: 'https://archive.org/download/doom_202007/doom.zip',
+                // Outras configurações podem ser ajustadas aqui
+            });
+        });
+    </script>
+</body>
+</html>
