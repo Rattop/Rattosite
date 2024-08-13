@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://files.catbox.moe/vqwe9n.png">
-    <meta name="description" content="Doom no DOS">
-    <meta name="keywords" content="Doom, DOS, Jogos, Rattop">
-    <meta property="og:title" content="Doom no DOS">
-    <meta property="og:description" content="Jogue Doom no seu navegador com js-dos">
+    <meta name="description" content="Doom no SNES">
+    <meta name="keywords" content="Doom, SNES, Jogos, Rattop">
+    <meta property="og:title" content="Doom no SNES">
+    <meta property="og:description" content="Jogue Doom no seu navegador com o emulador SNES">
     <meta property="og:url" content="https://ratto.neocities.org/doom.html">
     <meta property="og:image" content="https://files.catbox.moe/vqwe9n.png">
     <title>Doom no SNES</title>
@@ -30,15 +30,16 @@
         <div id="emul"></div>
     </div>
 
-<script>
-       document.addEventListener("DOMContentLoaded", function() {
-    var NepPlayer = "#emul";
-    var NepEmu = "snes";  // Verifique se o emulador é o correto
-    var NepLang = "ptBR";
-    var gameUrl = "https://files.catbox.moe/1iro3g.smc";  // Substitua pela URL do ROM do Doom para SNES
-    var NjsScript = document.createElement('script');
-    NjsScript.src = "//mem.neptunjs.com/njs/njsLoader.js";
-    document.body.appendChild(NjsScript);
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var NepPlayer = "#emul";
+            var NepEmu = "snes";  // Verifique se o emulador é o correto
+            var NepLang = "ptBR";
+            var gameUrl = "https://files.catbox.moe/1iro3g.smc";  // Substitua pela URL do ROM do Doom para SNES
+            var NjsScript = document.createElement('script');
+            NjsScript.src = "//mem.neptunjs.com/njs/njsLoader.js";
+            document.body.appendChild(NjsScript);
+        });
     </script>
 </body>
 </html>
