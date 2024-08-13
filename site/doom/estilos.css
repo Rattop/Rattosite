@@ -29,7 +29,6 @@ body {
     border: 2px solid #333; /* Borda para aparência mais antiga */
     border-radius: 10px; /* Bordas arredondadas */
     padding: 20px;
-    overflow: hidden; /* Evita rolagem interna */
     text-align: center; /* Centraliza o texto */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
 }
@@ -66,9 +65,10 @@ nav ul li a:hover {
 }
 
 /* Estilos para cabeçalhos */
-h1, h2 {
+h1 {
     color: #333; /* Cor do texto */
     padding: 10px 0;
+    font-size: 2em; /* Tamanho da fonte do título */
 }
 
 /* Estilo para parágrafos */
@@ -118,7 +118,8 @@ button.large-button:hover {
 
 /* Estilo específico para o emulador SNES */
 #emul {
-    width: 800px; /* Largura fixa do emulador */
+    width: 100%; /* Largura total do emulador */
+    max-width: 800px; /* Largura máxima do emulador */
     height: 600px; /* Altura fixa do emulador */
     border: 2px solid #333; /* Borda similar à da white-box */
     background-color: #000; /* Fundo preto */
@@ -129,7 +130,6 @@ button.large-button:hover {
 /* Media queries para dispositivos menores */
 @media (max-width: 768px) {
     #emul {
-        width: 100%; /* Largura total para telas menores */
         height: 400px; /* Altura reduzida para melhor visualização */
     }
 
