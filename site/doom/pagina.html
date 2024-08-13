@@ -31,31 +31,16 @@
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var NepPlayer = "#emul";  // ID do elemento HTML onde o emulador será inserido
-            var NepEmu = "segaMS";      // Plataforma selecionada
-            var NepZoom = "enable";   // Adiciona botão extra na barra de ferramentas para ampliar o emulador. Desativado por padrão
-            var NepMaxWidth = "1100px"; // Largura máxima do emulador
-            var NepLang = "ptBR";     // Idioma da interface do emulador
-            var gameUrl = "//neptunjs.xyz/roms/segaMS/Sonic The Hedgehog 2 (Europe).zip"; // URL do ROM do Doom para SNES
-            
-            var NjsScript = document.createElement('script');
-            NjsScript.src = "https://mem.neptunjs.com/njs/njsLoader.js";
-            NjsScript.type = "text/javascript";
-            document.body.appendChild(NjsScript);
-
-            NjsScript.onload = function() {
-                // Inicializa o NeptunJS após o carregamento da biblioteca
-                NeptunJS.initialize({
-                    player: NepPlayer,
-                    emulator: NepEmu,
-                    zoom: NepZoom,
-                    maxWidth: NepMaxWidth,
-                    lang: NepLang,
-                    gameUrl: gameUrl
-                });
-            };
-        });
+        var NepPlayer = "#emul";     // ID do elemento HTML onde o emulador será inserido
+        var NepEmu = "segaMS";      // Plataforma selecionada
+        var NepZoom = "enable";     // Adiciona botão extra na barra de ferramentas para ampliar o emulador. Desativado por padrão
+        var NepMaxWidth = "1100px"; // Largura máxima do emulador
+        var NepLang = "en";         // Idioma da interface do emulador
+        var gameUrl = "//neptunjs.xyz/roms/segaMS/Sonic The Hedgehog 2 (Europe).zip"; // URL do ROM
+    
+        <script src="https://mem.neptunjs.com/njs/njsLoader.js" type="text/javascript"> // NeptunJS lib
     </script>
+    </script>
+    
 </body>
 </html>
