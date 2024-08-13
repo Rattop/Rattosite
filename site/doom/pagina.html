@@ -12,7 +12,6 @@
     <meta property="og:image" content="https://files.catbox.moe/vqwe9n.png">
     <title>Doom no DOS</title>
     <link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css">
-    <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
     <link rel="stylesheet" href="./estilos.css">
 </head>
 
@@ -32,13 +31,14 @@
         <div id="dos"></div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            Dos(document.getElementById("dos"), {
-                url: "https://files.catbox.moe/3amb3d.jsdos", // Link para o pacote js-dos do Doom
-                // Adicione opções adicionais se necessário
-            });
-        });
+<script>
+        var NepPlayer = "#emul";
+        var NepEmu = "snes";  // Defina o emulador Aqui
+        var NepLang = "en";
+        var gameUrl = "https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Doom%20%28USA%29.zip";  // Substitua pela URL do ROM
+        var NjsScript = document.createElement('script');
+        NjsScript.src = "//mem.neptunjs.com/njs/njsLoader.js";
+        document.body.appendChild(NjsScript);
     </script>
 </body>
 </html>
