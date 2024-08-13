@@ -109,7 +109,7 @@ button.large-button:hover {
 }
 
 /* Estilo específico para o quadro DOS */
-#dos {
+#emul {
     width: 800px; /* Ajuste conforme necessário */
     height: 600px; /* Ajuste conforme necessário */
     border: 2px solid #333; /* Borda similar à da white-box */
@@ -120,7 +120,7 @@ button.large-button:hover {
 
 /* Ajusta o tamanho do quadro do DOS em dispositivos menores */
 @media (max-width: 768px) {
-    #dos {
+    #emul {
         width: 100%; /* Ajusta a largura para se adaptar à tela menor */
         height: 400px; /* Ajusta a altura para uma melhor visualização em telas menores */
     }

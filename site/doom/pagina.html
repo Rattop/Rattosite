@@ -10,8 +10,7 @@
     <meta property="og:description" content="Jogue Doom no seu navegador com js-dos">
     <meta property="og:url" content="https://ratto.neocities.org/doom.html">
     <meta property="og:image" content="https://files.catbox.moe/vqwe9n.png">
-    <title>Doom no DOS</title>
-    <link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css">
+    <title>Doom no SNES</title>
     <link rel="stylesheet" href="./estilos.css">
 </head>
 
@@ -28,17 +27,18 @@
         </nav>
 
         <h1>VC N TEM IDEIA DE QUANTO TEMPO LEVEI PRA FAZER ISSO AQ FUNCIONAROK</h1>
-        <div id="dos"></div>
+        <div id="emul"></div>
     </div>
 
 <script>
-        var NepPlayer = "#emul";
-        var NepEmu = "snes";  // Defina o emulador Aqui
-        var NepLang = "ptBR";
-        var gameUrl = "https://files.catbox.moe/1iro3g.smc";  // Substitua pela URL do ROM
-        var NjsScript = document.createElement('script');
-        NjsScript.src = "//mem.neptunjs.com/njs/njsLoader.js";
-        document.body.appendChild(NjsScript);
+       document.addEventListener("DOMContentLoaded", function() {
+    var NepPlayer = "#emul";
+    var NepEmu = "snes";  // Verifique se o emulador é o correto
+    var NepLang = "ptBR";
+    var gameUrl = "https://files.catbox.moe/1iro3g.smc";  // Substitua pela URL do ROM do Doom para SNES
+    var NjsScript = document.createElement('script');
+    NjsScript.src = "//mem.neptunjs.com/njs/njsLoader.js";
+    document.body.appendChild(NjsScript);
     </script>
 </body>
 </html>
