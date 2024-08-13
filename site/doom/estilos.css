@@ -1,60 +1,63 @@
-/* Reset some default styles */
+/* Reset de estilos padrão */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões totais */
 }
 
+/* Estilos gerais do corpo da página */
 body {
-    font-family: 'Verdana', sans-serif; /* Fonte dos anos 2000 */
-    background-image: url('../background.jpg'); /* Papel de parede de fundo */
-    background-size: cover; /* Garante que o fundo cubra toda a tela */
-    background-position: center; /* Centraliza o papel de parede */
-    color: #333; /* Cor do texto */
+    font-family: 'Verdana', sans-serif; /* Fonte estilo anos 2000 */
+    background-image: url('../background.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    color: #333; /* Cor do texto padrão */
     display: flex;
-    flex-direction: column; /* Alinha os itens verticalmente */
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    flex-direction: column; /* Alinha elementos verticalmente */
+    align-items: center; /* Centraliza elementos horizontalmente */
+    justify-content: center; /* Centraliza elementos verticalmente */
+    height: 100vh; /* Altura total da viewport */
     padding: 10px;
-    overflow: hidden; /* Evita rolagem quando o conteúdo é muito grande */
+    overflow: hidden; /* Evita rolagem quando o conteúdo é grande */
 }
 
+/* Estilo da caixa central branca (white-box) */
 .white-box {
-    background: #fff; /* Cor sólida de fundo */
+    background: #fff; /* Fundo branco sólido */
     width: 100%;
-    max-width: 900px;
-    border: 2px solid #333; /* Borda para um visual mais antigo */
-    border-radius: 10px;
+    max-width: 900px; /* Largura máxima de 900px */
+    border: 2px solid #333; /* Borda para aparência mais antiga */
+    border-radius: 10px; /* Bordas arredondadas */
     padding: 20px;
-    overflow: hidden; /* Evita rolagem interna indesejada */
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra para destaque */
+    overflow: hidden; /* Evita rolagem interna */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
 }
 
+/* Estilos do menu de navegação */
 nav {
-    width: 100%; /* Garante que o nav ocupe toda a largura disponível */
-    background-color: #ffcc00; /* Cor de fundo do menu para mais destaque */
+    width: 100%; /* Largura total */
+    background-color: #ffcc00; /* Cor de fundo do menu */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao fundo do menu */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
     margin-bottom: 20px; /* Espaço abaixo do menu */
 }
 
 nav ul {
-    list-style: none;
+    list-style: none; /* Remove os marcadores da lista */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* Espaço uniforme entre os itens */
     padding: 10px;
     margin: 0;
 }
 
 nav ul li a {
-    color: #000; /* Cor do link */
-    text-decoration: none;
+    color: #000; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
     font-size: 1.2em;
     padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* Bordas arredondadas nos links */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave ao passar o mouse */
 }
 
 nav ul li a:hover {
@@ -62,37 +65,42 @@ nav ul li a:hover {
     color: #fff; /* Cor do texto ao passar o mouse */
 }
 
+/* Estilos para cabeçalhos */
 h1, h2 {
-    color: #333;
+    color: #333; /* Cor do texto */
     padding: 10px 0;
 }
 
+/* Estilo para parágrafos */
 p {
     padding: 15px;
-    line-height: 1.6;
+    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
     font-size: 1.1em;
-    text-align: left;
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
+/* Estilos para listas não ordenadas */
 ul {
-    list-style: none; /* Remove estilo padrão da lista */
+    list-style: none; /* Remove os marcadores da lista */
     padding-left: 0;
-    margin: 20px 0; /* Adiciona margem para separar a lista do texto */
+    margin: 20px 0; /* Margem entre a lista e outros elementos */
 }
 
 ul li {
-    margin-bottom: 10px; /* Adiciona espaço entre os itens */
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
 }
 
+/* Centraliza iframes e imagens dentro da white-box */
 .white-box iframe, .white-box img {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; /* Centraliza elementos block */
 }
 
+/* Estilo de botões grandes */
 button.large-button {
-    background-color: #0066cc; /* Cor do botão */
+    background-color: #0066cc; /* Cor de fundo do botão */
     border: none;
-    color: white;
+    color: white; /* Cor do texto */
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
@@ -100,54 +108,54 @@ button.large-button {
     font-size: 1.1em;
     margin: 10px 0;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
 }
 
 button.large-button:hover {
-    background-color: #004d99; /* Cor do botão ao passar o mouse */
+    background-color: #004d99; /* Cor de fundo ao passar o mouse */
 }
 
-/* Estilo específico para o quadro DOS */
+/* Estilo específico para o emulador SNES */
 #emul {
-    width: 800px; /* Ajuste conforme necessário */
-    height: 600px; /* Ajuste conforme necessário */
+    width: 800px; /* Largura fixa do emulador */
+    height: 600px; /* Altura fixa do emulador */
     border: 2px solid #333; /* Borda similar à da white-box */
-    background-color: #000; /* Fundo preto para o console DOS */
-    margin: 20px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+    background-color: #000; /* Fundo preto */
+    margin: 20px auto; /* Centraliza e adiciona margem vertical */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra para destaque */
 }
 
-/* Ajusta o tamanho do quadro do DOS em dispositivos menores */
+/* Media queries para dispositivos menores */
 @media (max-width: 768px) {
     #emul {
-        width: 100%; /* Ajusta a largura para se adaptar à tela menor */
-        height: 400px; /* Ajusta a altura para uma melhor visualização em telas menores */
+        width: 100%; /* Largura total para telas menores */
+        height: 400px; /* Altura reduzida para melhor visualização */
     }
 
     .white-box {
-        padding: 10px; /* Ajusta o padding para telas menores */
-        width: 90%; /* Ajusta a largura da caixa */
+        padding: 10px; /* Padding reduzido para telas menores */
+        width: 90%; /* Largura da caixa ajustada */
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Alinha itens do menu verticalmente */
         padding: 0;
     }
 
     nav ul li {
-        margin-bottom: 10px;
+        margin-bottom: 10px; /* Espaçamento entre os itens do menu */
     }
 }
 
 @media (max-width: 480px) {
     nav ul li a {
-        font-size: 1em; /* Reduz o tamanho da fonte para dispositivos muito pequenos */
+        font-size: 1em; /* Tamanho da fonte reduzido para dispositivos pequenos */
         padding: 8px 10px;
     }
 
     button.large-button {
-        font-size: 1em; /* Reduz o tamanho da fonte do botão */
-        padding: 12px 25px; /* Ajusta o padding do botão */
+        font-size: 1em; /* Tamanho da fonte do botão reduzido */
+        padding: 12px 25px; /* Padding reduzido para melhor visualização */
     }
 }
