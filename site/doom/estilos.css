@@ -15,10 +15,9 @@ body {
     display: flex;
     flex-direction: column; /* Alinha elementos verticalmente */
     align-items: center; /* Centraliza elementos horizontalmente */
-    justify-content: center; /* Centraliza elementos verticalmente */
-    height: 100vh; /* Altura total da viewport */
     padding: 10px;
-    overflow: hidden; /* Evita rolagem quando o conteúdo é grande */
+    min-height: 100vh; /* Altura mínima da viewport */
+    overflow-y: auto; /* Permite rolagem vertical */
 }
 
 /* Estilo da caixa central branca (white-box) */
@@ -31,6 +30,7 @@ body {
     padding: 20px;
     text-align: center; /* Centraliza o texto */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+    margin-bottom: 20px; /* Adiciona margem inferior para dar espaço */
 }
 
 /* Estilos do menu de navegação */
@@ -150,12 +150,6 @@ button.large-button:hover {
 
 @media (max-width: 480px) {
     nav ul li a {
-        font-size: 1em; /* Tamanho da fonte reduzido para dispositivos pequenos */
-        padding: 8px 10px;
-    }
-
-    button.large-button {
-        font-size: 1em; /* Tamanho da fonte do botão reduzido */
-        padding: 12px 25px; /* Padding reduzido para melhor visualização */
+        font-size: 1em; /* Tamanho da fonte reduzido para telas muito pequenas */
     }
 }
